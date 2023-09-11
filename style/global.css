@@ -45,7 +45,7 @@ iframe {
     }
     
 [class*="__container"] {
-    max-width: 1240px;
+    max-width: 1180px;
     padding: 0 30px;
     margin: 0 auto;
 }

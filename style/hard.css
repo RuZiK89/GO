@@ -10,7 +10,7 @@
     width: 675px;
     height: 762px;
     position: absolute;
-    right: 0;
+    right: 30px;
     bottom: 0;
     background-size: contain;
 }
@@ -58,6 +58,7 @@
     font-weight: 900;
     line-height: normal;
     align-self: center;
+    font-variant: all-small-caps;
 }
 .hard__room-text {
     color: #FFF;
