@@ -1,0 +1,124 @@
+.header {
+}
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+.header__navigation-burger {
+    display: none;
+}
+.header__navigation-burger-link {
+}
+.header__navigation-burger-img {
+}
+.header__logo {
+}
+.header__logo-link {
+    width: 120px;
+}
+.link-img {
+}
+.header__navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header__navigation-list {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    column-gap: 40px;
+}
+.header__navigation-list-item {
+}
+.header__navigation-list-item-link {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 227.273% */
+    text-transform: uppercase;
+}
+.header__button {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 3px solid #CD06FF;
+    padding: 12px 32px;
+}
+
+.header__button:hover {
+    border: 3px solid #6C0287;
+    background: #6C0287;
+    }
+
+.header__button:active {
+    border: 3px solid #000;
+    background: #640AA3;
+}
+
+.header__button:focus {
+    background: #6C0287;
+}
+
+@media screen and (max-width:1110px) {
+    .header__logo-link {
+        width: 87px;
+    }
+
+    .header__navigation-list-item-link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px; /* 122.222% */
+    }
+
+    .header__button {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+    padding: 10px 26px;
+    }
+}
+
+@media screen and (max-width:930px) {
+    .header__logo-link {
+        width: 90px;
+    }
+
+    .header__navigation {
+        display: none;
+    }
+
+    .header__button {
+    font-size: 18px;
+    line-height: 24px; /* 133.333% */
+    padding: 10px 20px;
+    }
+
+    .header__navigation-burger {
+        display: flex;
+        align-self: center;
+        width: 54px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .header__button {
+        display: none;
+    }
+
+    .header__logo-link {
+        width: 66px;
+    }
+
+    .header__navigation-burger {
+        width: 39px;
+    }
+}
