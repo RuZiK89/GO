@@ -12,7 +12,7 @@
     position: absolute;
     right: 30px;
     bottom: 0;
-    background-size: contain;
+    background-size: cover;
 }
 .hard__title {
     color: #FFF;
@@ -22,7 +22,7 @@
     font-style: normal;
     font-weight: 900;
     line-height: 100%; /* 150px */
-    letter-spacing: -15px;
+    letter-spacing: -10px;
     text-transform: uppercase;
 }
 .hard__text {
@@ -42,6 +42,7 @@
 .hard__rooms {
     display: flex;
     flex-direction: row;
+    align-items: end;
     column-gap: 40px;
     margin-bottom: 150px;
 }
@@ -50,7 +51,7 @@
     flex-direction: column;
     max-width: 210px;
 }
-.hard__room-subtitle {
+.hard__room-subtitle-4 {
     color: #CD06FF;
     font-family: Arial;
     font-size: 100px;
@@ -58,7 +59,21 @@
     font-weight: 900;
     line-height: normal;
     align-self: center;
+}
+
+.hard__room-subtitle-new {
+    color: #CD06FF;
+    font-family: Arial;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    align-self: center;
     font-variant: all-small-caps;
+}
+
+.new {
+    font-size: 75px;
 }
 .hard__room-text {
     color: #FFF;
@@ -82,5 +97,63 @@
     background: #6C0287;
     padding: 25px 69px;
 }
+
+.hard__arrow {
+    position: relative;
+    max-width: 97px;
+    min-height: 97px;
+    background-image: url(../img/header/down_arrow.svg);
+    display: flex;
+    margin: auto;
+    z-index: 5;
+    bottom: 30px;
+}
+
+.hard__arrow:hover {
+    content: '';
+    background-image: url(../img/header/arrow_hover.svg);
+}
+
+.hard__arrow:active {
+    content: '';
+    background-image: url(../img/header/arrow_active.svg);
+}
+
 .btn-purple {
+}
+
+@media screen and (max-width:1110px) {
+    .hard__title {
+        font-size: 120px;
+    }
+
+    .hard__container::before {
+        width: 453px;
+        height: 520px;
+        background-size: cover;
+        bottom: 150px;
+    }
+
+    .hard__room-subtitle-4 {
+        font-size: 80px;
+    }
+    
+    .hard__room-subtitle-new {
+        font-size: 60px;
+    }
+
+    .hard__button {
+        font-size: 22px;
+        text-align: center;
+        margin-left: 39px;
+    }
+
+}
+
+@media screen and (max-width:930px) {
+    
+}
+
+@media screen and (max-width:500px) {
+    
 }
