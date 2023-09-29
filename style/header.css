@@ -14,10 +14,11 @@
 }
 .header__navigation-burger-img {
 }
-.header__logo {
-}
 .header__logo-link {
     width: 120px;
+    height: 66px;
+    background-image: url(../img/header/logo.svg);
+    background-size: cover;
 }
 .link-img {
 }
@@ -28,8 +29,6 @@
 }
 .header__navigation-list {
     display: flex;
-    flex-direction: row;
-    align-content: center;
     column-gap: 40px;
 }
 .header__navigation-list-item {
@@ -69,57 +68,68 @@
     background: #6C0287;
 }
 
-@media screen and (max-width:1110px) {
+@media screen and (max-width:1024px) {
+    .header__container {
+        column-gap: 79px;
+    }
+
     .header__logo-link {
         width: 87px;
+        height: 55px;
+        background-image: url(../img/header/logo.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .header__navigation-list {
+        column-gap: 20px;
     }
 
     .header__navigation-list-item-link {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px; /* 122.222% */
+        font-size: 18px;
+        line-height: 22px; /* 122.222% */
     }
 
     .header__button {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px; /* 133.333% */
-    padding: 10px 26px;
+        font-size: 18px;
+        line-height: 24px; /* 133.333% */
+        padding: 10px 26px;
     }
 }
 
-@media screen and (max-width:930px) {
-    .header__logo-link {
-        width: 90px;
+@media screen and (max-width:768px) {
+    .header__navigation-burger {
+        display: flex;
+        align-self: center;
+        width: 54px;
+        height: 29px;
     }
 
     .header__navigation {
         display: none;
     }
-
-    .header__button {
-    font-size: 18px;
-    line-height: 24px; /* 133.333% */
-    padding: 10px 20px;
-    }
-
-    .header__navigation-burger {
-        display: flex;
-        align-self: center;
-        width: 54px;
-    }
 }
 
-@media screen and (max-width:500px) {
-    .header__button {
-        display: none;
+@media screen and (max-width:320px) {
+    .header {
+        margin-bottom: 20px;
     }
 
-    .header__logo-link {
-        width: 66px;
+    .header__container {
+        padding: 0 20px;
     }
 
     .header__navigation-burger {
         width: 39px;
+        height: 20px;
+    }
+
+    .header__logo-link {
+        width: 66px;
+        height: 42px;
+    }
+
+    .header__button {
+        display: none;
     }
 }

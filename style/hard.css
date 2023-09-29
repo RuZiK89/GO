@@ -1,29 +1,28 @@
 .hard {
 }
 .hard__container {
-    height: 823px;
     position: relative;
 }
 .hard__container::before {
     content: '';
     background-image: url(../img/header/vr_man.jpg);
+    background-size: cover;
     width: 675px;
     height: 762px;
     position: absolute;
-    right: 30px;
-    bottom: 0;
-    background-size: cover;
+    right: 0px;
+    bottom: -60px;
 }
 .hard__title {
     color: #FFF;
     text-align: left;
+    text-transform: uppercase;
     font-family: Arial;
     font-size: 150px;
     font-style: normal;
     font-weight: 900;
     line-height: 100%; /* 150px */
-    letter-spacing: -10px;
-    text-transform: uppercase;
+    letter-spacing: -12px;
 }
 .hard__text {
     color: #FFF;
@@ -72,9 +71,6 @@
     font-variant: all-small-caps;
 }
 
-.new {
-    font-size: 75px;
-}
 .hard__room-text {
     color: #FFF;
     text-align: center;
@@ -103,6 +99,7 @@
     max-width: 97px;
     min-height: 97px;
     background-image: url(../img/header/down_arrow.svg);
+    background-size: contain;
     display: flex;
     margin: auto;
     z-index: 5;
@@ -122,38 +119,179 @@
 .btn-purple {
 }
 
-@media screen and (max-width:1110px) {
-    .hard__title {
-        font-size: 120px;
+
+@media screen and (max-width:1024px) {
+    .hard__container {
+        max-width: 964px;
     }
 
     .hard__container::before {
+        content: '';
+        background-image: url(../img/header/vr_man.jpg);
+        background-size: cover;
         width: 453px;
         height: 520px;
-        background-size: cover;
-        bottom: 150px;
+        position: absolute;
+        bottom: 20px;
+    }
+
+
+    .hard__title {
+        font-size: 120px;
+        line-height: 100%; /* 120px */
+        letter-spacing: -8px;
+        margin-bottom: 20px;
+    }
+
+    .hard__text {
+        font-size: 18px;
+        line-height: 30px; /* 133.333% */
     }
 
     .hard__room-subtitle-4 {
         font-size: 80px;
     }
-    
+
     .hard__room-subtitle-new {
         font-size: 60px;
     }
 
-    .hard__button {
-        font-size: 22px;
-        text-align: center;
-        margin-left: 39px;
+    .hard__room-text {
+        font-size: 26px;
     }
 
+    .hard__rooms {
+        margin-bottom: 80px;
+    }
+
+    .hard__button {
+        font-size: 22px;
+        padding: 17px 48px;
+    }
+
+    .hard__arrow {
+        position: relative;
+        max-width: 67px;
+        min-height: 67px;
+        background-size: contain;
+        bottom: 30px;
 }
 
-@media screen and (max-width:930px) {
-    
+@media screen and (max-width:768px) {
+    .hard__container {
+        max-width: 748px;
+    }
+
+    .hard__container::before {
+        content: '';
+        background-image: url(../img/header/vr_man.jpg);
+        background-size: cover;
+        width: 409px;
+        height: 479px;
+        bottom: -110px;
+    }
+
+    .hard__rooms {
+        column-gap: 32px;
+    }
+
+    .hard__title {
+        font-size: 86px;
+        letter-spacing: -8.6px;
+    }
+
+    .hard__text {
+        font-size: 18px;
+        line-height: 24px; /* 133.333% */
+    }
+
+    .hard__room-subtitle-4 {
+        font-size: 50px;
+    }
+
+    .hard__room-subtitle-new {
+        font-size: 40px;
+    }
+
+    .hard__room-text {
+        font-size: 16px;
+    }
+
+    .hard__rooms {
+        margin-bottom: 100px;
+    }
+
+    .hard__button {
+        font-size: 16px;
+        line-height: 24px; /* 150% */
+        padding: 11px 35px;
+    }
+
+    .hard__arrow {
+        display: none;
+}
 }
 
-@media screen and (max-width:500px) {
-    
+@media screen and (max-width:320px) {
+    .hard__container {
+        max-width: 380px;
+    }
+
+    .hard__container::before {
+        content: '';
+        background-image: url(../img/header/vr_man.jpg);
+        background-size: cover;
+        width: 161px;
+        height: 179px;
+        bottom: 0px;
+    }
+
+    .hard__rooms {
+        column-gap: 20px;
+        padding-left: 20px;
+    }
+
+    .hard__room {
+        display: flex;
+        justify-self: auto;
+        align-self: auto;
+    }
+
+    .hard__title {
+        font-size: 35px;
+        line-height: 100%; /* 35px */
+        letter-spacing: -2.8px;
+    }
+
+    .hard__text {
+        font-size: 10px;
+        line-height: 14px; /* 140% */
+        padding-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    .hard__room-subtitle-4 {
+        font-size: 26px;
+    }
+
+    .hard__room-subtitle-new {
+        font-size: 22px;
+    }
+
+    .hard__room-text {
+        font-size: 10px;
+    }
+
+    .hard__rooms {
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 30px;
+    }
+
+    .hard__button {
+        font-size: 10px;
+        line-height: 12px; /* 150% */
+        padding: 7px 13px;
+        border-radius: 4px;
+    }
 }
