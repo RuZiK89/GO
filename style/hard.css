@@ -92,6 +92,7 @@
     border-radius: 10px;
     background: #6C0287;
     padding: 25px 69px;
+    box-shadow: 0 0 25px #6C0287;
 }
 
 .hard__arrow {
@@ -246,28 +247,32 @@
         bottom: 0px;
     }
 
-    .hard__rooms {
-        column-gap: 20px;
-        padding-left: 20px;
-    }
-
-    .hard__room {
-        display: flex;
-        justify-self: auto;
-        align-self: auto;
-    }
-
     .hard__title {
+        text-align: center;
         font-size: 35px;
         line-height: 100%; /* 35px */
         letter-spacing: -2.8px;
+        margin-bottom: 15px;
     }
 
     .hard__text {
         font-size: 10px;
         line-height: 14px; /* 140% */
-        padding-left: 0px;
+        padding: 0;
+        text-align: center;
         margin-bottom: 10px;
+    }
+
+    .hard__rooms {
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-bottom: 30px;
+        column-gap: 20px;
+    }
+
+    .room-4 {
+        padding-left: 7px;
     }
 
     .hard__room-subtitle-4 {
@@ -280,12 +285,6 @@
 
     .hard__room-text {
         font-size: 10px;
-    }
-
-    .hard__rooms {
-        flex-direction: column;
-        align-items: start;
-        margin-bottom: 30px;
     }
 
     .hard__button {
