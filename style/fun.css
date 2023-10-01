@@ -1,5 +1,6 @@
 .fun {
     margin-top: 150px;
+    margin-bottom: 100px;
 }
 
 .fun__title {
@@ -92,6 +93,7 @@
 @media screen and (max-width:1024px) {
     .fun {
         margin-top: 20px;
+        margin-bottom: 70px;
     }
 
     .fun__title {
@@ -132,6 +134,7 @@
 @media screen and (max-width:768px) {
     .fun {
         margin-top: 150px;
+        margin-bottom: 60px;
     }
 
     .fun__title {
@@ -172,6 +175,7 @@
 @media screen and (max-width:320px) {
     .fun {
         margin-top: 20px;
+        margin-bottom: 30px;
     }
 
     .fun__title {
