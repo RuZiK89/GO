@@ -1,0 +1,217 @@
+.fun {
+    margin-top: 150px;
+}
+
+.fun__title {
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px; /* 125% */
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.fun__container {
+    margin: 0 auto;
+}
+
+.fun__entertainments {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 0 0 33.333%;
+    gap: 40px 20px;
+}
+
+.card-2 {
+    margin-top: 70px;
+}
+
+.card-4, .card-6 {
+    margin-top: -70px;
+}
+
+.fun__entertainments-card {
+    display: inline-flex;
+    align-items: end;
+    width: 380px;
+    height: 228px;
+    flex-shrink: 0;
+}
+
+.fun__entertainments-card:hover {
+    box-shadow: 0 0 25px #6C0287;
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+.card-1 {
+    background-image: url(../img/friends/friends_1.jpg);
+    background-size: cover;
+}
+
+.card-2 {
+    background-image: url(../img/friends/friends_2.jpg);
+    background-size: cover;
+}
+
+.card-3 {
+    background-image: url(../img/friends/friends_3.jpg);
+    background-size: cover;
+}
+
+.card-4 {
+    background-image: url(../img/friends/friends_4.jpg);
+    background-size: cover;
+}
+
+.card-5 {
+    background-image: url(../img/friends/friends_5.jpg);
+    background-size: cover;
+}
+
+.card-6 {
+    background-image: url(../img/friends/friends_6.jpg);
+    background-size: cover;
+}
+
+.fun__entertainments-card-text {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 140% */
+    margin: 0 40px 20px;
+}
+
+@media screen and (max-width:1024px) {
+    .fun {
+        margin-top: 20px;
+    }
+
+    .fun__title {
+        font-size: 30px;
+        line-height: 40px; /* 133.333% */
+        margin-bottom: 36px;
+    }
+    
+    .fun__entertainments {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 0 0 33.333%;
+        gap: 30px 21px;
+    }
+    
+    .card-2 {
+        margin-top: 53px;
+    }
+    
+    .card-4, .card-6 {
+        margin-top: -53px;
+    }
+    
+    .fun__entertainments-card {
+        display: inline-flex;
+        align-items: end;
+        width: 287px;
+        height: 172px;
+        flex-shrink: 0;
+    }
+
+    .fun__entertainments-card-text {
+        margin: 0 20px 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .fun {
+        margin-top: 150px;
+    }
+
+    .fun__title {
+        font-size: 24px;
+        line-height: 36px; /* 150% */
+        margin-bottom: 30px;
+    }
+    
+    .fun__entertainments {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 0 0 50%;
+        gap: 20px;
+    }
+    
+    .card-2 {
+        margin-top: 0px;
+    }
+    
+    .card-4, .card-6 {
+        margin-top: 0px;
+    }
+    
+    .fun__entertainments-card {
+        display: inline-flex;
+        align-items: end;
+        width: 334px;
+        height: 200px;
+        flex-shrink: 0;
+    }
+
+    .fun__entertainments-card-text {
+        margin: 0 30px 40px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .fun {
+        margin-top: 20px;
+    }
+
+    .fun__title {
+        font-size: 14px;
+        line-height: 18px; /* 128.571% */
+        margin-bottom: 15px;
+    }
+    
+    .fun__entertainments {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 0 0 50%;
+        row-gap: 20px;
+    }
+    
+    .card-2 {
+        margin-top: 0px;
+    }
+    
+    .card-4, .card-6 {
+        margin-top: 0px;
+    }
+    
+    .fun__entertainments-card {
+        display: inline-flex;
+        align-items: end;
+        width: 135px;
+        height: 75px;
+        flex-shrink: 0;
+    }
+
+    .fun__entertainments-card:hover {
+        transform: scale(1.1);
+    }
+
+    .fun__entertainments-card-text {
+        text-align: center;
+        font-size: 10px;
+        line-height: 14px; /* 140% */
+        margin: auto;
+    }
+}
